@@ -1,0 +1,70 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="theme-color" content="#081324">
+  <meta name="description" content="Aula interactiva de la Profesora Úrsula: Fundamentos de Derecho Internacional, Eje 2, Sesión 4.">
+  <title>Sesión 04 · Derecho internacional | Profesora Úrsula</title>
+  <link rel="stylesheet" href="./styles.css">
+  <link rel="icon" type="image/svg+xml" href="./favicon.svg">
+  <script src="./content.js" defer></script>
+  <script src="./app.js" defer></script>
+</head>
+<body>
+  <a class="skip" href="#main">Saltar al contenido</a>
+  <div class="ambient ambient-a" aria-hidden="true"></div><div class="ambient ambient-b" aria-hidden="true"></div>
+  <header class="topbar">
+    <a class="identity" href="#inicio" aria-label="Ir al inicio de Profesora Úrsula">
+      <span class="identity-mark" aria-hidden="true">Ú<span class="spark">✦</span></span>
+      <span><strong>PROFESORA ÚRSULA</strong><small>DERECHO EXPANDIDO · SKYTOOLS</small></span>
+    </a>
+    <div class="top-actions">
+      <span class="course-pill">FUNDAMENTOS DE DERECHO INTERNACIONAL</span>
+      <button class="quiet" id="presentBtn" type="button" title="Ampliar para proyección">⛶ <span>Proyectar</span></button>
+      <a class="quiet backlink" href="https://laprofeursula.skytools.org/" target="_blank" rel="noopener noreferrer">Portal VR ↗</a>
+    </div>
+  </header>
+  <main id="main">
+    <section id="home" class="home" aria-labelledby="mainTitle">
+      <div class="eyebrow"><span class="eyebrow-line"></span>EJE 02 / SESIÓN 04 / LABORATORIO JURÍDICO DIGITAL</div>
+      <div class="hero-grid">
+        <div class="hero-copy">
+          <p class="kicker">DERECHO INTERNACIONAL × DERECHO INTERNO</p>
+          <h1 id="mainTitle">Cuando una obligación<br><em>trasciende fronteras.</em></h1>
+          <p class="intro">Explora cómo se relacionan los ordenamientos jurídicos, cuándo responde internacionalmente un Estado y qué nos enseñan los casos Petro Urrego y Lockerbie.</p>
+          <div class="metrics" aria-label="Datos de la sesión"><span><b>80</b> minutos</span><span><b>28</b> pantallas</span><span><b>04</b> módulos</span></div>
+          <div class="hero-actions"><button class="primary" id="startBtn" type="button">Comenzar la sesión <span aria-hidden="true">↗</span></button><button class="outline" id="resumeBtn" type="button">Continuar donde quedé →</button></div>
+          <p class="hero-footnote">Avance opcional guardado únicamente en este navegador. No se recopilan nombres ni calificaciones.</p>
+        </div>
+        <div class="hero-art" role="img" aria-label="Diagrama entre derecho interno, obligación internacional y responsabilidad estatal">
+          <div class="orbit orbit-one"></div><div class="orbit orbit-two"></div>
+          <div class="concept concept-top"><span>01</span>DERECHO INTERNACIONAL</div>
+          <div class="concept concept-right"><span>02</span>DERECHO INTERNO</div>
+          <div class="core"><div class="core-symbol">§</div><b>OBLIGACIÓN</b><small>CONDUCTA · CONSECUENCIA</small></div>
+          <div class="concept concept-bottom"><span>03</span>RESPONSABILIDAD ESTATAL</div>
+          <div class="art-label">ARQUITECTURA JURÍDICA / 2026</div>
+        </div>
+      </div>
+      <div class="section-heading"><span>ITINERARIO DE LA CLASE</span><span>Selecciona una estación para comenzar</span></div>
+      <div class="module-grid" id="moduleGrid"></div>
+      <div class="course-disclaimer">Proyecto académico complementario. Las actividades de esta página son formativas y no constituyen una calificación institucional.</div>
+    </section>
+    <section id="classroom" class="classroom" hidden aria-label="Contenido de la sesión">
+      <aside class="rail" aria-label="Navegación del curso">
+        <div class="rail-heading"><span>RECORRIDO ACADÉMICO</span><button class="small-plain" id="homeBtn" type="button">← Inicio</button></div>
+        <div class="progress-block"><div class="progress-row"><span>Tu recorrido</span><strong id="progressLabel">0 / 28</strong></div><div class="progress-track"><div class="progress-fill" id="progressFill"></div></div></div>
+        <nav id="lessonNav" aria-label="28 pantallas y cuatro módulos"></nav>
+        <div class="rail-bottom">Material académico abierto<br>PROFESORA ÚRSULA · SKYTOOLS</div>
+      </aside>
+      <div class="stage">
+        <div class="stage-topline"><button class="small-plain mobile-outline" id="toggleNav" type="button" aria-controls="lessonNav" aria-expanded="false">☰ Temario</button><span id="breadcrumb">EJE 02 / MÓDULO 01</span><span id="timeCounter">00 / 80 MIN</span></div>
+        <article id="lesson" class="lesson" aria-live="polite"></article>
+        <div class="stage-footer"><button class="outline" id="prevBtn" type="button">← Anterior</button><div class="slide-index" id="slideCounter" aria-live="polite">01 / 28</div><button class="primary" id="nextBtn" type="button">Siguiente →</button></div>
+      </div>
+    </section>
+  </main>
+  <footer class="page-footer"><span>© 2026 Profesora Úrsula · Derecho Expandido</span><span>Universidad Areandina · Proyecto académico docente</span></footer>
+  <div class="toast" id="toast" role="status" aria-live="polite"></div>
+</body>
+</html>
