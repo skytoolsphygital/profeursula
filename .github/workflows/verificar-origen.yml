@@ -1,0 +1,19 @@
+name: Verificar origen del portal
+on:
+  push:
+    paths:
+      - .github/workflows/verificar-origen.yml
+permissions:
+  contents: read
+jobs:
+  check:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Comprobar origenes HTTPS
+        shell: bash
+        run: |
+          for url in https://laprofeursula.skytools.org/index.html https://laprofeursula-sesiones.skytools.org/index.html; do
+            echo "URL $url"
+            curl -sS -L --connect-timeout 15 --max-time 40 -o /tmp/ursula-source -w 'HTTP=%{http_code} SIZE=%{size_download} URL=%{url_effective}\n' "$url" || true
+            if test -f /tmp/ursula-source; then sha256sum /tmp/ursula-source; fi
+          done
